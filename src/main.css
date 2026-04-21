@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Averta Std — 16 weights (Extrathin → Black, with italics)          */
+/* ------------------------------------------------------------------ */
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Extrathin.ttf') format('truetype');       font-weight:100; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-ExtrathinItalic.ttf') format('truetype'); font-weight:100; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Thin.ttf') format('truetype');            font-weight:200; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-ThinItalic.ttf') format('truetype');      font-weight:200; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Light.ttf') format('truetype');           font-weight:300; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-LightItalic.ttf') format('truetype');     font-weight:300; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Regular.ttf') format('truetype');         font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-RegularItalic.ttf') format('truetype');   font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Semibold.ttf') format('truetype');        font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-SemiboldItalic.ttf') format('truetype');  font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Bold.ttf') format('truetype');            font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-BoldItalic.ttf') format('truetype');      font-weight:700; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-ExtraBold.ttf') format('truetype');       font-weight:800; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-ExtraBoldItalic.ttf') format('truetype'); font-weight:800; font-style:italic; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-Black.ttf') format('truetype');           font-weight:900; font-style:normal; font-display:swap; }
+@font-face { font-family:'Averta Std'; src:url('/fonts/AvertaStd-BlackItalic.ttf') format('truetype');     font-weight:900; font-style:italic; font-display:swap; }
+
+@theme {
+  /* ------------- UMATI BRAND ------------- */
+  /* Umati Orange (signature — from rebrand PNG -03) */
+  --color-umati-50:  #FFF4EC;
+  --color-umati-100: #FFE3CC;
+  --color-umati-200: #FFC599;
+  --color-umati-300: #FFA566;
+  --color-umati-400: #F38B3F;
+  --color-umati-500: #E87722;   /* PRIMARY — signature Umati orange */
+  --color-umati-600: #C96316;
+  --color-umati-700: #A04E0E;
+  --color-umati-800: #773A09;
+  --color-umati-900: #4F2705;
+
+  /* Onyx — deep architectural charcoal (logo black) */
+  --color-onyx-50:  #F6F6F6;
+  --color-onyx-100: #E8E8E8;
+  --color-onyx-200: #CFCFCF;
+  --color-onyx-300: #A8A8A8;
+  --color-onyx-400: #707070;
+  --color-onyx-500: #4A4A4A;
+  --color-onyx-600: #2E2E2E;
+  --color-onyx-700: #1E1E1E;
+  --color-onyx-800: #151515;
+  --color-onyx-900: #111111;   /* logo charcoal */
+  --color-onyx-950: #080808;
+
+  /* Silver — subtle secondary (from logo subtitle gray) */
+  --color-silver-50:  #FAFAFA;
+  --color-silver-100: #F2F2F2;
+  --color-silver-200: #E5E5E5;
+  --color-silver-300: #D1D1D1;
+  --color-silver-400: #9CA3AF;   /* logo secondary gray */
+  --color-silver-500: #6B7280;
+
+  /* Ivory — warm off-white canvas */
+  --color-ivory-50:  #FDFCFA;
+  --color-ivory-100: #FAF8F3;
+  --color-ivory-200: #F3EFE6;
+  --color-ivory-300: #E8E1D3;
+
+  /* ------------- TYPOGRAPHY ------------- */
+  --font-display: 'Averta Std', system-ui, -apple-system, sans-serif;
+  --font-body:    'Averta Std', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-ivory-50);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-onyx-800);
+  background: var(--color-ivory-50);
+  overflow-x: hidden;
+  letter-spacing: -0.005em;
+}
+
+::selection {
+  background: var(--color-umati-500);
+  color: white;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-ivory-100); }
+::-webkit-scrollbar-thumb { background: var(--color-onyx-300); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-umati-500); }
+
+.font-display { font-family: var(--font-display); }
+.font-body    { font-family: var(--font-body); }
+
+.text-balance { text-wrap: balance; }
+.text-pretty  { text-wrap: pretty; }
+
+/* Display headings — tight tracking for bold Averta Black */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+}
+
+.display-mega {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/* ------------- UTILITIES ------------- */
+.glass-nav {
+  background: rgba(253, 252, 250, 0.82);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.glass-dark {
+  background: rgba(17, 17, 17, 0.72);
+  backdrop-filter: blur(18px) saturate(1.3);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+}
+
+.hero-vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%),
+    linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0) 70%);
+}
+
+.edge-gradient {
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+}
+
+.accent-rule {
+  position: relative;
+  padding-left: 28px;
+}
+.accent-rule::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background: var(--color-umati-500);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes slow-drift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(-1.2%, -0.8%) scale(1.04); }
+}
+@keyframes counter-tick {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-marquee { animation: marquee 50s linear infinite; }
+.animate-slow-drift { animation: slow-drift 30s ease-in-out infinite; }
+
+:focus-visible {
+  outline: 2px solid var(--color-umati-500);
+  outline-offset: 3px;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
