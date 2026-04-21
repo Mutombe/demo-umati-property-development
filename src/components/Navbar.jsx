@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { List, X, WhatsappLogo, Phone } from '@phosphor-icons/react';
+import { List, X, WhatsappLogo, Phone, MagnifyingGlass } from '@phosphor-icons/react';
 import { business, navLinks } from '../data/siteData';
 
-export default function Navbar() {
+export default function Navbar({ onOpenSearch = () => {} }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [logoOk, setLogoOk] = useState(true);
@@ -101,6 +101,18 @@ export default function Navbar() {
 
           {/* Right side CTAs */}
           <div className="flex items-center gap-2 sm:gap-3">
+            <button
+              type="button"
+              onClick={onOpenSearch}
+              aria-label="Open search"
+              className={`flex h-10 w-10 items-center justify-center transition-colors ${
+                transparent
+                  ? 'text-white/90 hover:text-umati-400'
+                  : 'text-onyx-700 hover:text-umati-600'
+              }`}
+            >
+              <MagnifyingGlass size={18} weight="bold" />
+            </button>
             <a
               href={`tel:${business.phone.replace(/\s/g, '')}`}
               aria-label="Call"
@@ -153,13 +165,22 @@ export default function Navbar() {
             <span className="font-display font-black text-xl text-white tracking-[-0.04em]">
               {business.wordmark}
             </span>
-            <button
-              onClick={() => setOpen(false)}
-              aria-label="Close menu"
-              className="h-11 w-11 flex items-center justify-center text-white"
-            >
-              <X size={24} weight="bold" />
-            </button>
+            <div className="flex items-center gap-1">
+              <button
+                onClick={() => { setOpen(false); onOpenSearch(); }}
+                aria-label="Open search"
+                className="h-11 w-11 flex items-center justify-center text-white hover:text-umati-400 transition-colors"
+              >
+                <MagnifyingGlass size={22} weight="bold" />
+              </button>
+              <button
+                onClick={() => setOpen(false)}
+                aria-label="Close menu"
+                className="h-11 w-11 flex items-center justify-center text-white"
+              >
+                <X size={24} weight="bold" />
+              </button>
+            </div>
           </div>
           <nav className="flex-1 flex flex-col px-6 py-8 gap-0.5">
             {navLinks.map((l) => (

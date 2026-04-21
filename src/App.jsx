@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from 'sonner';
@@ -7,6 +7,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import SearchModal from './components/SearchModal';
 
 import Home from './pages/Home';
 import Developments from './pages/Developments';
@@ -28,10 +30,12 @@ function ScrollReset() {
 
 export default function App() {
   const location = useLocation();
+  const [searchOpen, setSearchOpen] = useState(false);
+
   return (
     <>
       <ScrollReset />
-      <Navbar />
+      <Navbar onOpenSearch={() => setSearchOpen(true)} />
       <main className="min-h-[60vh]">
         <ErrorBoundary>
           <AnimatePresence mode="popLayout" initial={false}>
@@ -51,6 +55,8 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <FloatingWhatsApp />
+      <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
       <Toaster
         position="top-center"
         theme="dark"
