@@ -19,7 +19,7 @@ export default function ProjectCard({ project, variant = 'default' }) {
             src={project.hero}
             alt={project.name}
             className="w-full h-full object-cover object-center transition-transform duration-[1800ms] ease-out group-hover:scale-110"
-            loading="lazy"
+            loading="lazy" decoding="async"
             onError={(e) => e.currentTarget.style.display='none'}
           />
         </div>
@@ -58,7 +58,7 @@ export default function ProjectCard({ project, variant = 'default' }) {
           src={project.hero}
           alt={project.name}
           className="w-full h-full object-cover object-center transition-transform duration-[1400ms] ease-out group-hover:scale-110"
-          loading="lazy"
+          loading="lazy" decoding="async"
           onError={(e) => e.currentTarget.style.display='none'}
         />
       </div>

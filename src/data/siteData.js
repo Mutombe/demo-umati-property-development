@@ -37,7 +37,7 @@ export const business = {
 export const heroSlides = [
   {
     image:
-      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=75',
     eyebrow: 'Now Selling Off-Plan',
     headline: 'A different kind of developer.',
     headlineSecond: 'Built for Zimbabwe.',
@@ -46,7 +46,7 @@ export const heroSlides = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=75',
     eyebrow: 'Track Record',
     headline: 'Three estates.',
     headlineSecond: 'Forty units. All occupied.',
@@ -55,7 +55,7 @@ export const heroSlides = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=75',
     eyebrow: 'Investment Grade',
     headline: 'USD-denominated.',
     headlineSecond: 'Professionally structured.',
@@ -195,7 +195,7 @@ export const developments = [
     description:
       "9 on Cottenham sits in Greencroft, an established and high-demand northern residential node that blends mature suburbs with proximity to schools, shopping, and arterial access to the CBD. The estate delivered 29 family cluster townhouses, each with three bedrooms, a master ensuite, and open-plan living and dining. A children's play centre, BBQ area, independent borehole water supply and a secure gated perimeter round out a liveable, family-first environment.",
     hero:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=1400&q=80',
@@ -232,7 +232,7 @@ export const developments = [
     description:
       'Set in the quiet, sought-after suburb of Sunridge in Harare West, 25 on Kloof is a boutique development of four contemporary cluster homes. Each residence is designed with three bedrooms, a master ensuite, and open-plan living that opens onto private landscaped gardens. Borehole water and a secure gated estate ensure uninterrupted comfort and peace of mind.',
     hero:
-      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1400&q=80',
@@ -269,7 +269,7 @@ export const developments = [
     description:
       'Vainona is a premium northern suburb commanding strong capital values, and 9 on Dart delivers accordingly — eight luxury duplex townhouses with four bedrooms all ensuite, high-end finishes throughout, private gardens, and plunge pools. Round-the-clock security, a short walk to top-rated schools and shopping centres, and a premium address complete a residence of real standing.',
     hero:
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1400&q=80',
@@ -306,7 +306,7 @@ export const developments = [
     description:
       "Ivory Gardens is Umati's largest residential estate currently in development — twenty-two spacious four-bedroom duplex units in Marlborough, Harare's high-growth northwest corridor with strong capital-appreciation potential. Every home features open-plan living and private gardens, complemented by a swimming pool, gymnasium, and a fully secured gated perimeter. Investors who commit at this stage access below-market entry values, with capital gains realised at completion. Contact us to receive the pricing schedule, floor plans, and payment-plan options.",
     hero:
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
@@ -343,7 +343,7 @@ export const developments = [
     description:
       "The Ranch is an investment-grade hospitality and tourism development positioned to benefit from the sustained growth of Zimbabwe's tourism sector. Designed as a yield-generating asset, it is structured for institutional and private investors seeking exposure to the country's hospitality upside. A detailed investment prospectus is available to registered investors — contact our investment team to request the full investor deck.",
     hero:
-      'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80',
@@ -379,7 +379,7 @@ export const developments = [
     description:
       "Silvermist Estate marks Umati's deliberate expansion into Zimbabwe's secondary growth cities. Built in Marondera to the same uncompromising standards as our Harare estates, Silvermist is a premium gated residential estate that brings the Umati commitment — integrated platform, financial discipline, architectural quality — to a new, fast-growing market. Register your interest for early access to pricing and unit availability.",
     hero:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1900&q=80',
+      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=75',
     gallery: [
       'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1400&q=80',

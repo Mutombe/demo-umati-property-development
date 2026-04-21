@@ -65,7 +65,7 @@ export default function Insights() {
               <SectionReveal key={a.slug} delay={i * 70}>
                 <Link to="/insights" className="block group">
                   <div className="aspect-[4/3] overflow-hidden bg-onyx-100">
-                    <img src={a.image} alt={a.title} className="w-full h-full object-cover object-center transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy" onError={(e)=>e.currentTarget.style.display='none'} />
+                    <img src={a.image} alt={a.title} className="w-full h-full object-cover object-center transition-transform duration-[1200ms] group-hover:scale-105" loading="lazy" decoding="async" onError={(e)=>e.currentTarget.style.display='none'} />
                   </div>
                   <div className="pt-6">
                     <p className="eyebrow text-umati-600">{a.category} · {a.date}</p>

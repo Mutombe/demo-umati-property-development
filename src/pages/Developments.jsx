@@ -28,7 +28,7 @@ export default function Developments() {
       <section className="relative bg-onyx-950 text-white pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1900&q=80"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=75"
             alt=""
             className="w-full h-full object-cover opacity-30"
             loading="eager"

@@ -37,7 +37,7 @@ export default function Home() {
       {/* ================================================================ */}
       {/*  HERO — full-bleed cinematic carousel                             */}
       {/* ================================================================ */}
-      <section className="relative -mt-[72px] lg:-mt-20 h-[100svh] min-h-[640px] max-h-[920px] overflow-hidden bg-onyx-950">
+      <section className="relative -mt-[72px] lg:-mt-20 h-[100svh] min-h-[600px] max-h-[920px] overflow-hidden bg-onyx-950">
         {heroSlides.map((s, i) => (
           <div
             key={i}
@@ -49,6 +49,8 @@ export default function Home() {
               alt=""
               className="w-full h-full object-cover object-center animate-slow-drift"
               loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : 'low'}
+              decoding={i === 0 ? 'sync' : 'async'}
               onError={(e) => e.currentTarget.style.display='none'}
             />
           </div>
@@ -58,42 +60,51 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-onyx-950/60 via-onyx-950/20 to-onyx-950/85 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-r from-onyx-950/70 via-transparent to-transparent pointer-events-none" />
 
-        {/* Content */}
-        <div className="relative z-10 h-full flex flex-col justify-end">
-          <div className="max-w-[1480px] mx-auto w-full px-5 sm:px-8 lg:px-14 pb-16 sm:pb-20 lg:pb-28">
-            <div className="flex items-center gap-4 mb-6">
+        {/* Content — 3-row grid: top spacer (nav + breathing) / centred content / bottom meta */}
+        <div className="relative z-10 h-full grid grid-rows-[auto_1fr_auto]">
+          {/* Top spacer — clears nav (72/80px) plus comfortable breathing room */}
+          <div className="pt-[88px] sm:pt-[104px] lg:pt-[120px]" />
+
+          {/* Hero content — vertically centred in the free space */}
+          <div className="max-w-[1480px] mx-auto w-full px-5 sm:px-8 lg:px-14 flex flex-col justify-center">
+            <div className="flex items-center gap-4 mb-4 sm:mb-5">
               <span className="h-[1px] w-10 bg-umati-500" />
               <p className="eyebrow text-umati-400">{current.eyebrow}</p>
             </div>
-            <h1 className="display-mega text-white text-[48px] sm:text-[80px] lg:text-[128px] max-w-[1100px] leading-[0.88]">
+            <h1
+              className="display-mega text-white max-w-[1100px] leading-[0.9]"
+              style={{ fontSize: 'clamp(2.5rem, 8.2vw, 7.5rem)' }}
+            >
               {current.headline}<br />
               <span className="text-umati-500">{current.headlineSecond}</span>
             </h1>
-            <p className="mt-7 text-[17px] sm:text-[19px] lg:text-[20px] text-ivory-100/85 max-w-2xl leading-relaxed">
+            <p className="mt-5 sm:mt-6 text-[15px] sm:text-[17px] lg:text-[19px] text-ivory-100/85 max-w-2xl leading-[1.55]">
               {current.sub}
             </p>
 
             {/* Split reservation-style CTA */}
-            <div className="mt-10 flex flex-wrap gap-0 border border-white/20 max-w-xl">
+            <div className="mt-7 sm:mt-8 flex flex-wrap gap-0 border border-white/20 max-w-xl">
               <Link
                 to="/developments"
-                className="flex-1 bg-umati-500 hover:bg-umati-600 text-white px-7 py-5 text-[12px] tracking-[0.2em] uppercase font-bold inline-flex items-center justify-center gap-2.5 transition-colors"
+                className="flex-1 bg-umati-500 hover:bg-umati-600 text-white px-6 sm:px-7 py-4 sm:py-5 text-[11px] sm:text-[12px] tracking-[0.2em] uppercase font-bold inline-flex items-center justify-center gap-2.5 transition-colors min-h-[44px]"
               >
                 Explore developments <ArrowRight size={16} weight="bold" />
               </Link>
               <Link
                 to="/invest"
-                className="flex-1 bg-transparent hover:bg-white/10 text-white px-7 py-5 text-[12px] tracking-[0.2em] uppercase font-bold inline-flex items-center justify-center gap-2.5 transition-colors border-l border-white/20"
+                className="flex-1 bg-transparent hover:bg-white/10 text-white px-6 sm:px-7 py-4 sm:py-5 text-[11px] sm:text-[12px] tracking-[0.2em] uppercase font-bold inline-flex items-center justify-center gap-2.5 transition-colors border-l border-white/20 min-h-[44px]"
               >
                 Invest with Umati <ArrowUpRight size={16} weight="bold" />
               </Link>
             </div>
+          </div>
 
-            {/* Bottom meta */}
-            <div className="mt-14 lg:mt-20 flex flex-wrap items-end gap-x-10 gap-y-6">
+          {/* Bottom meta — pinned to bottom of viewport */}
+          <div className="max-w-[1480px] mx-auto w-full px-5 sm:px-8 lg:px-14 pb-6 sm:pb-8 lg:pb-12">
+            <div className="flex flex-wrap items-end gap-x-8 lg:gap-x-10 gap-y-4">
               <div>
-                <p className="eyebrow text-white/50 mb-2">Current focus</p>
-                <p className="text-white font-semibold inline-flex items-center gap-2"><MapPin size={16} weight="fill" className="text-umati-500" /> {current.location}</p>
+                <p className="eyebrow text-white/50 mb-1.5">Current focus</p>
+                <p className="text-white font-semibold inline-flex items-center gap-2 text-[14px] sm:text-[15px]"><MapPin size={16} weight="fill" className="text-umati-500" /> {current.location}</p>
               </div>
               <div className="flex gap-2.5">
                 {heroSlides.map((_, i) => (
@@ -338,10 +349,11 @@ export default function Home() {
       {/* ================================================================ */}
       <section className="relative py-24 lg:py-36 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1900&q=80"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=75"
           alt=""
           className="absolute inset-0 w-full h-full object-cover object-center"
           loading="lazy"
+          decoding="async"
           onError={(e) => e.currentTarget.style.display='none'}
         />
         <div className="absolute inset-0 bg-onyx-950/70" />

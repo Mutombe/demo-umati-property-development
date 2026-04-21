@@ -88,7 +88,7 @@ export default function Footer() {
                 src={business.logoDark}
                 alt={business.name}
                 className="h-11 w-auto"
-                loading="lazy"
+                loading="lazy" decoding="async"
                 onError={(e) => { e.currentTarget.style.display = 'none'; setLogoOk(false); }}
               />
             ) : (

@@ -8,7 +8,7 @@ export default function LeadershipCard({ person }) {
           src={person.image}
           alt={person.name}
           className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-[900ms] ease-out"
-          loading="lazy"
+          loading="lazy" decoding="async"
           onError={(e) => e.currentTarget.style.display='none'}
         />
       </div>

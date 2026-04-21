@@ -108,7 +108,7 @@ export default function DevelopmentDetail() {
                   onClick={() => setGIdx(i)}
                   className={`aspect-[4/3] overflow-hidden transition-opacity ${gIdx === i ? 'opacity-100 ring-2 ring-umati-500' : 'opacity-60 hover:opacity-100'}`}
                 >
-                  <img src={g} alt="" className="w-full h-full object-cover object-center" loading="lazy" onError={(e) => e.currentTarget.style.display='none'} />
+                  <img src={g} alt="" className="w-full h-full object-cover object-center" loading="lazy" decoding="async" onError={(e) => e.currentTarget.style.display='none'} />
                 </button>
               ))}
             </div>

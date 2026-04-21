@@ -208,7 +208,7 @@ export default function Contact() {
                 src="https://www.google.com/maps?q=Avondale%2C%20Harare%2C%20Zimbabwe&output=embed"
                 title="Umati office — Avondale, Harare"
                 className="w-full h-full"
-                loading="lazy"
+                loading="lazy" decoding="async"
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>

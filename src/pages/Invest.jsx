@@ -21,7 +21,7 @@ export default function Invest() {
 
       {/* Hero */}
       <section className="relative bg-onyx-950 text-white pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1900&q=80" alt="" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" onError={(e)=>e.currentTarget.style.display='none'} />
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=75" alt="" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" onError={(e)=>e.currentTarget.style.display='none'} />
         <div className="absolute inset-0 bg-onyx-950/70" />
         <div className="relative max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14">
           <nav className="text-[11px] tracking-[0.18em] uppercase text-ivory-300/50 mb-8">

@@ -19,7 +19,7 @@ export default function Services() {
       {/* Hero */}
       <section className="bg-onyx-950 text-white pt-28 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1900&q=80" alt="" className="w-full h-full object-cover" loading="eager" onError={(e)=>e.currentTarget.style.display='none'} />
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=75" alt="" className="w-full h-full object-cover" loading="eager" onError={(e)=>e.currentTarget.style.display='none'} />
         </div>
         <div className="absolute inset-0 bg-onyx-950/70" />
         <div className="relative max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14">
