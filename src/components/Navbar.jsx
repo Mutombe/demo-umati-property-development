@@ -41,7 +41,7 @@ export default function Navbar({ onOpenSearch = () => {} }) {
               <img
                 src={business.logoDark}
                 alt={business.name}
-                className="h-9 sm:h-10 w-auto shrink-0"
+                className="h-12 sm:h-14 lg:h-16 w-auto shrink-0"
                 loading="eager"
                 onError={() => setLogoDarkOk(false)}
               />
@@ -49,7 +49,7 @@ export default function Navbar({ onOpenSearch = () => {} }) {
               <img
                 src={business.logo}
                 alt={business.name}
-                className="h-9 sm:h-10 w-auto shrink-0"
+                className="h-12 sm:h-14 lg:h-16 w-auto shrink-0"
                 loading="eager"
                 onError={() => setLogoOk(false)}
               />
