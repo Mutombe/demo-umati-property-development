@@ -51,7 +51,7 @@ export default function DevelopmentDetail() {
           <span className={`inline-block px-3.5 py-1.5 mb-7 text-[10px] tracking-[0.2em] uppercase font-bold ${statusBg}`}>
             {project.statusTag}
           </span>
-          <h1 className="display-mega text-white text-[52px] sm:text-[80px] lg:text-[120px] leading-[0.9]">
+          <h1 className="type-hero text-white">
             {project.name}
           </h1>
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-ivory-200/85">
@@ -61,7 +61,7 @@ export default function DevelopmentDetail() {
             <span className="text-ivory-300/40">·</span>
             <span>{project.units}</span>
           </div>
-          <p className="mt-7 text-[18px] lg:text-[20px] text-ivory-100/90 max-w-3xl leading-[1.65]">{project.summary}</p>
+          <p className="type-lead mt-7 text-ivory-100/90 max-w-3xl">{project.summary}</p>
         </div>
       </section>
 
@@ -117,10 +117,10 @@ export default function DevelopmentDetail() {
             <SectionReveal>
               <div className="mt-14">
                 <p className="eyebrow text-umati-600 mb-4">About the development</p>
-                <h2 className="display-mega text-onyx-900 text-[32px] sm:text-[44px] lg:text-[56px] leading-[0.98]">
+                <h2 className="type-h2 text-onyx-900">
                   A closer look at {project.name}.
                 </h2>
-                <p className="mt-7 text-onyx-700 text-[17px] lg:text-[18px] leading-[1.75]">{project.description}</p>
+                <p className="type-lead mt-7 text-onyx-700">{project.description}</p>
               </div>
             </SectionReveal>
 
@@ -128,12 +128,12 @@ export default function DevelopmentDetail() {
             <SectionReveal>
               <div className="mt-14 pt-12 border-t border-onyx-200">
                 <p className="eyebrow text-umati-600 mb-4">Features & amenities</p>
-                <h3 className="display-mega text-onyx-900 text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.02]">What lives here.</h3>
+                <h3 className="type-h2 text-onyx-900">What lives here.</h3>
                 <ul className="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-4">
                   {project.amenities.map((a, i) => (
                     <li key={i} className="flex items-start gap-3 text-onyx-800">
                       <CheckCircle size={22} weight="duotone" className="text-umati-500 mt-0.5 shrink-0" />
-                      <span className="text-[15px] leading-relaxed">{a}</span>
+                      <span className="type-body">{a}</span>
                     </li>
                   ))}
                 </ul>
@@ -146,7 +146,7 @@ export default function DevelopmentDetail() {
           <aside className="lg:col-span-4 lg:sticky lg:top-28 self-start space-y-5">
             <div className="bg-onyx-900 text-white p-7">
               <p className="eyebrow text-umati-400 mb-4">Register interest</p>
-              <h3 className="display-mega text-[26px] leading-[1.05]">Secure your information pack.</h3>
+              <h3 className="type-sub text-white">Secure your information pack.</h3>
               <p className="mt-4 text-sm text-ivory-200/80 leading-relaxed">
                 Receive the project brochure, floor plans, and current pricing schedule within 24 hours.
               </p>
@@ -185,7 +185,7 @@ export default function DevelopmentDetail() {
           <div className="flex items-end justify-between mb-10 lg:mb-14 gap-4 flex-wrap">
             <div>
               <p className="eyebrow text-umati-600 mb-3">Also on our books</p>
-              <h2 className="display-mega text-onyx-900 text-[32px] sm:text-[44px] lg:text-[56px] leading-[0.98]">More developments.</h2>
+              <h2 className="type-h2 text-onyx-900">More developments.</h2>
             </div>
             <Link to="/developments" className="text-[12px] tracking-[0.18em] uppercase font-bold text-onyx-900 hover:text-umati-600 inline-flex items-center gap-2">
               View all <ArrowRight size={16} weight="bold" />
@@ -202,11 +202,11 @@ export default function DevelopmentDetail() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <Link to={`/developments/${prev.slug}`} className="group text-left">
             <p className="eyebrow text-onyx-400 mb-2 inline-flex items-center gap-2"><ArrowLeft size={12} weight="bold" /> Previous</p>
-            <p className="font-display font-black text-[22px] tracking-[-0.03em] text-onyx-900 group-hover:text-umati-600 transition-colors">{prev.name}</p>
+            <p className="type-sub text-onyx-900 group-hover:text-umati-600 transition-colors">{prev.name}</p>
           </Link>
           <Link to={`/developments/${next.slug}`} className="group text-right">
             <p className="eyebrow text-onyx-400 mb-2 inline-flex items-center gap-2">Next <ArrowRight size={12} weight="bold" /></p>
-            <p className="font-display font-black text-[22px] tracking-[-0.03em] text-onyx-900 group-hover:text-umati-600 transition-colors">{next.name}</p>
+            <p className="type-sub text-onyx-900 group-hover:text-umati-600 transition-colors">{next.name}</p>
           </Link>
         </div>
       </section>

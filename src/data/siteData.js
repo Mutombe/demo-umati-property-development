@@ -16,6 +16,7 @@ export const business = {
   logo: '/logo.png',
   logoDark: '/logo-dark.png',
   logoOrange: '/logo-orange.png',
+  profilePdf: '/umati-company-profile.pdf',
 
   phone: '+263 773 098 491',
   phoneAlt: '0867 710 5688',

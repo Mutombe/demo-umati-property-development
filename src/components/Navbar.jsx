@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { List, X, WhatsappLogo, Phone, MagnifyingGlass } from '@phosphor-icons/react';
+import { List, X, WhatsappLogo, Phone, MagnifyingGlass, DownloadSimple } from '@phosphor-icons/react';
 import { business, navLinks } from '../data/siteData';
 
 export default function Navbar({ onOpenSearch = () => {} }) {
@@ -124,6 +124,20 @@ export default function Navbar({ onOpenSearch = () => {} }) {
             >
               <Phone size={18} weight="bold" />
             </a>
+            <a
+              href={business.profilePdf}
+              download
+              aria-label="Download company profile (PDF)"
+              title="Company profile (PDF)"
+              className={`hidden md:inline-flex items-center gap-2 px-3 py-2.5 text-[12px] tracking-[0.14em] uppercase font-semibold transition-colors ${
+                transparent
+                  ? 'text-white/90 hover:text-umati-400'
+                  : 'text-onyx-700 hover:text-umati-600'
+              }`}
+            >
+              <DownloadSimple size={16} weight="bold" />
+              <span className="hidden xl:inline">Profile</span>
+            </a>
             <Link
               to="/developments"
               className="hidden lg:inline-flex items-center gap-2 bg-umati-500 hover:bg-umati-600 text-white px-5 py-2.5 text-[12px] tracking-[0.14em] uppercase font-semibold transition-colors"
@@ -213,6 +227,13 @@ export default function Navbar({ onOpenSearch = () => {} }) {
               className="block w-full flex items-center justify-center gap-2 border border-white/30 text-white py-3.5 text-[12px] tracking-[0.18em] uppercase font-semibold hover:bg-white hover:text-onyx-900 transition-colors"
             >
               <Phone size={16} weight="fill" /> Call office
+            </a>
+            <a
+              href={business.profilePdf}
+              download
+              className="block w-full flex items-center justify-center gap-2 border border-white/30 text-white py-3.5 text-[12px] tracking-[0.18em] uppercase font-semibold hover:bg-white hover:text-onyx-900 transition-colors"
+            >
+              <DownloadSimple size={16} weight="bold" /> Company profile (PDF)
             </a>
             <p className="text-[11px] text-white/50 text-center mt-4">{business.address}</p>
           </div>

@@ -25,10 +25,10 @@ export default function Insights() {
             <span className="text-umati-600">Insights</span>
           </nav>
           <p className="eyebrow text-umati-600 mb-5">Insights & news</p>
-          <h1 className="display-mega text-onyx-900 text-[52px] sm:text-[80px] lg:text-[120px] leading-[0.9]">
+          <h1 className="type-hero text-onyx-900">
             Thinking out loud.
           </h1>
-          <p className="mt-6 text-[17px] text-onyx-600 max-w-2xl leading-[1.65]">
+          <p className="type-lead mt-6 text-onyx-600 max-w-2xl">
             Project updates, market notes, and investor briefings — from the Umati platform.
           </p>
         </div>
@@ -45,8 +45,8 @@ export default function Insights() {
                 </div>
                 <div className="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
                   <p className="eyebrow text-umati-400 mb-5">{feature.category} · {feature.date}</p>
-                  <h2 className="display-mega text-white text-[32px] sm:text-[44px] lg:text-[56px] leading-[0.98]">{feature.title}</h2>
-                  <p className="mt-6 text-[16px] text-ivory-200/85 leading-[1.7]">{feature.excerpt}</p>
+                  <h2 className="type-h2 text-white">{feature.title}</h2>
+                  <p className="type-lead mt-6 text-ivory-200/85">{feature.excerpt}</p>
                   <span className="mt-8 inline-flex items-center gap-2 text-umati-400 group-hover:text-umati-300 text-[12px] tracking-[0.2em] uppercase font-bold">
                     Read article <ArrowUpRight size={16} weight="bold" />
                   </span>
@@ -69,8 +69,8 @@ export default function Insights() {
                   </div>
                   <div className="pt-6">
                     <p className="eyebrow text-umati-600">{a.category} · {a.date}</p>
-                    <h3 className="mt-3 font-display font-black text-[22px] leading-[1.1] tracking-[-0.03em] text-onyx-900 group-hover:text-umati-600 transition-colors">{a.title}</h3>
-                    <p className="mt-3 text-[14px] text-onyx-600 leading-relaxed">{a.excerpt}</p>
+                    <h3 className="type-sub mt-3 text-onyx-900 group-hover:text-umati-600 transition-colors">{a.title}</h3>
+                    <p className="type-small mt-3 text-onyx-600">{a.excerpt}</p>
                   </div>
                 </Link>
               </SectionReveal>

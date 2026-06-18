@@ -12,10 +12,10 @@ export default function NotFound() {
       <section className="min-h-[80vh] bg-ivory-50 flex items-center justify-center px-6 py-24">
         <div className="max-w-2xl text-center">
           <p className="eyebrow text-umati-600 mb-4">404</p>
-          <h1 className="display-mega text-onyx-900 text-[56px] sm:text-[88px] lg:text-[128px] leading-[0.9]">
+          <h1 className="type-hero text-onyx-900">
             Lost the plot.
           </h1>
-          <p className="mt-7 text-onyx-600 text-[17px] leading-relaxed max-w-md mx-auto">
+          <p className="type-lead mt-7 text-onyx-600 max-w-md mx-auto">
             That page does not exist — but our developments definitely do. Let us show you around.
           </p>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">

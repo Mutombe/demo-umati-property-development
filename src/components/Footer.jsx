@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  MapPin, Clock, Phone, EnvelopeSimple, WhatsappLogo, ArrowUpRight,
+  MapPin, Clock, Phone, EnvelopeSimple, WhatsappLogo, ArrowUpRight, DownloadSimple,
 } from '@phosphor-icons/react';
 import { business, services, developments } from '../data/siteData';
 
@@ -16,11 +16,11 @@ export default function Footer() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 py-14 lg:py-20 grid lg:grid-cols-12 gap-10 lg:gap-14">
           <div className="lg:col-span-7">
             <p className="eyebrow text-umati-400">Let us build together</p>
-            <h3 className="mt-5 display-mega text-[44px] sm:text-[64px] lg:text-[80px] leading-[0.9] text-white">
+            <h3 className="type-h1 mt-5 text-white">
               From concept<br />
               <span className="text-umati-500">to keys.</span>
             </h3>
-            <p className="mt-6 max-w-xl text-ivory-300/80 text-lg leading-relaxed">
+            <p className="type-lead mt-6 max-w-xl text-ivory-300/80">
               Whether you are looking for your next home in Harare, exploring investment opportunities from abroad, or seeking a development partner — we welcome your inquiry.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
@@ -111,6 +111,11 @@ export default function Footer() {
             <li><Link to="/leadership" className="text-ivory-200 hover:text-umati-400">Leadership</Link></li>
             <li><Link to="/insights" className="text-ivory-200 hover:text-umati-400">Insights</Link></li>
             <li><Link to="/contact" className="text-ivory-200 hover:text-umati-400">Contact</Link></li>
+            <li>
+              <a href={business.profilePdf} download className="text-umati-400 hover:text-umati-300 inline-flex items-center gap-1.5">
+                Company profile <DownloadSimple size={14} weight="bold" />
+              </a>
+            </li>
           </ul>
         </div>
 

@@ -191,7 +191,7 @@ export default function SearchModal({ open, onClose }) {
           {/* No results */}
           {q.trim() && totalResults === 0 && (
             <div className="text-center py-16">
-              <p className="display-mega text-onyx-900 text-3xl sm:text-4xl">
+              <p className="type-h2 text-onyx-900">
                 Nothing matched.
               </p>
               <p className="mt-3 text-onyx-500 text-sm">

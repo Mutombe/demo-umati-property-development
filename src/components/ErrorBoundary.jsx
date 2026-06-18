@@ -16,7 +16,7 @@ export default class ErrorBoundary extends React.Component {
         <div className="min-h-[70vh] flex items-center justify-center px-6 bg-ivory-50">
           <div className="text-center max-w-md">
             <p className="eyebrow text-umati-600">A small interruption</p>
-            <h1 className="mt-3 display-mega text-4xl sm:text-5xl text-onyx-900">Something went wrong.</h1>
+            <h1 className="type-h1 mt-3 text-onyx-900">Something went wrong.</h1>
             <p className="mt-4 text-onyx-500 text-sm">Give the page a refresh — if it persists, message us on WhatsApp and we will take a look.</p>
             <div className="mt-8 flex items-center justify-center gap-3">
               <button

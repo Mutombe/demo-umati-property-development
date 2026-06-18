@@ -30,12 +30,12 @@ export default function Invest() {
             <span className="text-umati-400">Invest</span>
           </nav>
           <p className="eyebrow text-umati-400 mb-5">Investment opportunity</p>
-          <h1 className="display-mega text-[52px] sm:text-[80px] lg:text-[120px] leading-[0.9]">
+          <h1 className="type-hero">
             Zimbabwe real estate.
             <span className="block text-umati-500">Hard currency.</span>
             <span className="block">Actively managed.</span>
           </h1>
-          <p className="mt-8 text-[17px] lg:text-[19px] text-ivory-200/85 max-w-3xl leading-[1.65]">
+          <p className="type-lead mt-8 text-ivory-200/85 max-w-3xl">
             Zimbabwe's residential property market — particularly Harare's northern suburbs — presents a compelling investment case grounded in structural undersupply, hard-currency pricing, and demonstrated capital appreciation. Umati is the platform to access it, with professional oversight at every stage.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
@@ -55,7 +55,7 @@ export default function Invest() {
           <SectionReveal>
             <div className="max-w-3xl mb-14 lg:mb-20">
               <p className="eyebrow text-umati-600 mb-4">Why invest with Umati</p>
-              <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">Six reasons.</h2>
+              <h2 className="type-h2 text-onyx-900">Six reasons.</h2>
             </div>
           </SectionReveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
@@ -65,8 +65,8 @@ export default function Invest() {
                 <SectionReveal key={r.title} delay={i * 60}>
                   <div className="bg-ivory-100 border border-onyx-100 p-7 h-full hover:border-umati-500 transition-colors">
                     <Icon size={30} weight="duotone" className="text-umati-500 mb-6" />
-                    <h3 className="font-display font-black text-[20px] leading-[1.15] tracking-[-0.03em] text-onyx-900 mb-3">{r.title}</h3>
-                    <p className="text-[14px] text-onyx-600 leading-relaxed">{r.body}</p>
+                    <h3 className="type-sub text-onyx-900 mb-3">{r.title}</h3>
+                    <p className="type-small text-onyx-600">{r.body}</p>
                   </div>
                 </SectionReveal>
               );
@@ -81,11 +81,11 @@ export default function Invest() {
           <SectionReveal>
             <div className="max-w-3xl mb-14 lg:mb-20">
               <p className="eyebrow text-umati-400 mb-4">How to buy</p>
-              <h2 className="display-mega text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+              <h2 className="type-h2">
                 A straightforward process.
                 <span className="block text-umati-500">Secure from abroad.</span>
               </h2>
-              <p className="mt-6 text-ivory-200/80 text-[16px] leading-[1.7]">
+              <p className="type-lead mt-6 text-ivory-200/80">
                 Purchasing Zimbabwean property is a straightforward, secure process through Umati's integrated platform. Legal, payment, and registration are all handled in-house.
               </p>
             </div>
@@ -95,8 +95,8 @@ export default function Invest() {
               <SectionReveal key={s.step} delay={i * 80}>
                 <div className="bg-white/[0.03] border border-white/10 p-6 h-full">
                   <p className="font-display font-black text-5xl text-umati-500 leading-none tracking-[-0.04em] mb-5">{s.step}</p>
-                  <h3 className="font-display font-black text-[18px] leading-[1.15] tracking-[-0.03em] text-white mb-3">{s.title}</h3>
-                  <p className="text-[13px] text-ivory-200/75 leading-relaxed">{s.body}</p>
+                  <h3 className="type-sub text-white mb-3">{s.title}</h3>
+                  <p className="type-small text-ivory-200/75">{s.body}</p>
                 </div>
               </SectionReveal>
             ))}
@@ -110,7 +110,7 @@ export default function Invest() {
           <SectionReveal>
             <div className="max-w-3xl mb-14 lg:mb-20">
               <p className="eyebrow text-umati-600 mb-4">The Umati commitment</p>
-              <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+              <h2 className="type-h2 text-onyx-900">
                 Results matter.
                 <span className="block text-umati-500">Always have.</span>
               </h2>
@@ -120,8 +120,8 @@ export default function Invest() {
             {pillars.map((p, i) => (
               <SectionReveal key={p.title} delay={i * 60}>
                 <div className="bg-ivory-50 p-7 h-full border-l-2 border-umati-500">
-                  <h3 className="font-display font-black text-[22px] tracking-[-0.03em] text-onyx-900 mb-4">{p.title}</h3>
-                  <div className="space-y-4 text-[14px] leading-relaxed">
+                  <h3 className="type-sub text-onyx-900 mb-4">{p.title}</h3>
+                  <div className="space-y-4 type-small">
                     <div><p className="eyebrow text-umati-600 mb-1.5">Our standard</p><p className="text-onyx-700">{p.standard}</p></div>
                     <div className="pt-3 border-t border-onyx-100"><p className="eyebrow text-onyx-400 mb-1.5">For you</p><p className="text-onyx-600">{p.foryou}</p></div>
                   </div>
@@ -138,10 +138,10 @@ export default function Invest() {
         <div className="relative max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
             <p className="eyebrow text-white/70 mb-5">Register your interest</p>
-            <h2 className="display-mega text-white text-[40px] sm:text-[56px] lg:text-[80px] leading-[0.95]">
+            <h2 className="type-h1 text-white">
               Priority access to every launch.
             </h2>
-            <p className="mt-6 text-white/90 text-[17px] leading-[1.65] max-w-xl">
+            <p className="type-lead mt-6 text-white/90 max-w-xl">
               Registered investors receive priority notification of new project launches, off-plan pricing access, and invitations to Umati investor briefings before opportunities are released to the general market.
             </p>
           </div>

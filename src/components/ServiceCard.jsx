@@ -24,10 +24,10 @@ export default function ServiceCard({ service, index }) {
           {num}
         </span>
       </div>
-      <h3 className="font-display font-black text-[22px] sm:text-[24px] leading-[1.05] tracking-[-0.03em] text-onyx-900 mb-3">
+      <h3 className="type-sub text-onyx-900 mb-3">
         {service.title}
       </h3>
-      <p className="text-[14px] text-onyx-600 leading-relaxed flex-1">{service.blurb}</p>
+      <p className="type-small text-onyx-600 flex-1">{service.blurb}</p>
       <ul className="mt-6 pt-6 border-t border-onyx-100 space-y-2">
         {service.bullets.map((b, i) => (
           <li key={i} className="flex items-start gap-2 text-[13px] text-onyx-700">

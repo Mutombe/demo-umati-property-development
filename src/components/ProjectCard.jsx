@@ -38,7 +38,7 @@ export default function ProjectCard({ project, variant = 'default' }) {
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-9 lg:p-12 text-white">
             <p className="eyebrow text-umati-400 mb-2 sm:mb-3 text-[11px] sm:text-xs">{project.type}</p>
-            <h3 className="display-mega text-[26px] leading-[0.95] sm:text-5xl lg:text-6xl mb-3 sm:mb-4 text-white tracking-[-0.02em]">
+            <h3 className="type-h1 mb-3 sm:mb-4 text-white">
               {project.name}
             </h3>
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] sm:text-sm text-ivory-200/80">
@@ -46,7 +46,7 @@ export default function ProjectCard({ project, variant = 'default' }) {
               <span className="text-ivory-300/40 hidden sm:inline">·</span>
               <span>{project.units}</span>
             </div>
-            <p className="mt-3 sm:mt-5 text-[13px] sm:text-[15px] text-ivory-200/90 max-w-2xl leading-relaxed line-clamp-2 sm:line-clamp-none">{project.summary}</p>
+            <p className="type-small mt-3 sm:mt-5 text-ivory-200/90 max-w-2xl line-clamp-2 sm:line-clamp-none">{project.summary}</p>
             <span className="mt-4 sm:mt-7 inline-flex items-center gap-2 text-[11px] sm:text-[12px] tracking-[0.18em] uppercase font-semibold text-umati-400 group-hover:text-umati-300">
               View development <ArrowUpRight size={14} weight="bold" className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </span>
@@ -92,13 +92,13 @@ export default function ProjectCard({ project, variant = 'default' }) {
         </div>
         <div className="p-6 sm:p-7">
           <p className="eyebrow text-umati-600">{project.type}</p>
-          <h3 className="mt-2.5 font-display font-black text-[26px] sm:text-[28px] leading-[0.98] tracking-[-0.03em] text-onyx-900">
+          <h3 className="type-sub mt-2.5 text-onyx-900">
             {project.name}
           </h3>
           <p className="mt-2 text-sm text-onyx-500 inline-flex items-center gap-1.5">
             <MapPin size={14} /> {project.location}
           </p>
-          <p className="mt-4 text-[14px] text-onyx-600 leading-relaxed line-clamp-3">
+          <p className="type-small mt-4 text-onyx-600 line-clamp-3">
             {project.summary}
           </p>
           <div className="mt-5 pt-5 border-t border-onyx-200/60 flex items-center justify-between">

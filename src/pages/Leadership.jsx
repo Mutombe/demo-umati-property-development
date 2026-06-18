@@ -28,11 +28,11 @@ export default function Leadership() {
             <span className="text-umati-400">Leadership</span>
           </nav>
           <p className="eyebrow text-umati-400 mb-5">The people behind the platform</p>
-          <h1 className="display-mega text-[52px] sm:text-[80px] lg:text-[120px] leading-[0.9]">
+          <h1 className="type-hero">
             One team.
             <span className="block text-umati-500">One standard.</span>
           </h1>
-          <p className="mt-8 text-[17px] lg:text-[19px] text-ivory-200/80 max-w-2xl leading-[1.65]">
+          <p className="type-lead mt-8 text-ivory-200/80 max-w-2xl">
             Development, legal, investment, sales, and technical expertise brought together under one accountable structure — so your investment is never caught between conflicting parties.
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function Leadership() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
           <div className="max-w-2xl">
             <p className="eyebrow text-umati-600 mb-4">Want to work with us?</p>
-            <h2 className="display-mega text-onyx-900 text-[36px] sm:text-[52px] lg:text-[64px] leading-[0.95]">Partner with the Umati platform.</h2>
+            <h2 className="type-h2 text-onyx-900">Partner with the Umati platform.</h2>
           </div>
           <Link to="/contact" className="inline-flex items-center gap-2.5 bg-onyx-900 hover:bg-umati-500 text-white px-8 py-5 text-[12px] tracking-[0.2em] uppercase font-bold transition-colors">
             Start a conversation <ArrowRight size={16} weight="bold" />

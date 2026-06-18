@@ -71,14 +71,11 @@ export default function Home() {
               <span className="h-[1px] w-10 bg-umati-500" />
               <p className="eyebrow text-umati-400">{current.eyebrow}</p>
             </div>
-            <h1
-              className="display-mega text-white max-w-[1100px] leading-[0.9]"
-              style={{ fontSize: 'clamp(2.5rem, 8.2vw, 7.5rem)' }}
-            >
+            <h1 className="type-hero text-white max-w-[1100px]">
               {current.headline}<br />
               <span className="text-umati-500">{current.headlineSecond}</span>
             </h1>
-            <p className="mt-5 sm:mt-6 text-[15px] sm:text-[17px] lg:text-[19px] text-ivory-100/85 max-w-2xl leading-[1.55]">
+            <p className="type-lead mt-5 sm:mt-6 text-ivory-100/85 max-w-2xl">
               {current.sub}
             </p>
 
@@ -133,16 +130,16 @@ export default function Home() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 py-14 lg:py-20 grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-5">
             <p className="eyebrow text-umati-400 mb-5">About Umati · est. 2016</p>
-            <h2 className="display-mega text-white text-[36px] sm:text-[48px] lg:text-[60px] leading-[0.95]">
+            <h2 className="type-h2 text-white">
               We do not simply build.
               <span className="block text-umati-500 mt-2">We structure, build, manage.</span>
             </h2>
           </div>
           <div className="lg:col-span-7 lg:pt-4">
-            <p className="text-ivory-200/85 text-[17px] lg:text-[18px] leading-[1.65]">
+            <p className="type-lead text-ivory-200/85">
               {business.shortBio}
             </p>
-            <p className="mt-5 text-ivory-300/70 text-[15px] leading-relaxed">
+            <p className="type-body mt-5 text-ivory-300/70">
               We structure deals, mobilise capital, manage legal compliance, drive sales, and operate the finished asset — end to end, under one seamlessly integrated platform. Every project we deliver is financially sound, legally clean, expertly marketed, and professionally managed from first brick to final title deed.
             </p>
             <Link
@@ -179,7 +176,7 @@ export default function Home() {
             <div className="flex flex-wrap items-end justify-between gap-6 mb-12 lg:mb-16">
               <div>
                 <p className="eyebrow text-umati-600 mb-4">Now selling</p>
-                <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+                <h2 className="type-h2 text-onyx-900">
                   Featured development.
                 </h2>
               </div>
@@ -207,13 +204,13 @@ export default function Home() {
             <div className="grid lg:grid-cols-12 gap-8 mb-14 lg:mb-20">
               <div className="lg:col-span-5">
                 <p className="eyebrow text-umati-600 mb-4">Our track record</p>
-                <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[68px] leading-[0.95]">
+                <h2 className="type-h2 text-onyx-900">
                   Three estates.
                   <span className="block text-umati-500">Forty units. All occupied.</span>
                 </h2>
               </div>
               <div className="lg:col-span-6 lg:col-start-7 lg:pt-6">
-                <p className="text-onyx-600 text-[17px] leading-[1.7]">
+                <p className="type-lead text-onyx-600">
                   Since 2016 Umati has built and delivered more than 40 residential units across three completed gated estates in Harare's prime northern residential corridors. Each has met market demand while setting new benchmarks in quality, security, and modern living. Our track record is not a claim — it is a body of completed, occupied, and appreciated assets.
                 </p>
               </div>
@@ -239,13 +236,13 @@ export default function Home() {
             <div className="grid lg:grid-cols-12 gap-8 mb-14 lg:mb-20">
               <div className="lg:col-span-6">
                 <p className="eyebrow text-umati-600 mb-4">What we do</p>
-                <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+                <h2 className="type-h2 text-onyx-900">
                   End to end.
                   <span className="block">Under one roof.</span>
                 </h2>
               </div>
               <div className="lg:col-span-5 lg:col-start-8 lg:pt-8">
-                <p className="text-onyx-600 text-[16px] leading-[1.7]">
+                <p className="type-lead text-onyx-600">
                   Four strategically aligned entities work in concert on every project — eliminating the gaps, delays, and conflicts that arise when development, legal, financial, and sales functions are managed by separate parties.
                 </p>
               </div>
@@ -271,11 +268,11 @@ export default function Home() {
           <SectionReveal>
             <div className="max-w-3xl mb-14 lg:mb-20">
               <p className="eyebrow text-umati-400 mb-4">Our integrated ecosystem</p>
-              <h2 className="display-mega text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.92]">
+              <h2 className="type-h2">
                 Four entities.
                 <span className="block text-umati-500">One accountable structure.</span>
               </h2>
-              <p className="mt-6 text-ivory-200/80 text-[16px] leading-[1.7]">
+              <p className="type-lead mt-6 text-ivory-200/80">
                 What makes Umati fundamentally different is not just what we build — it is how we build it. One point of accountability, no handover gaps, and a seamless journey from first inquiry to final title deed.
               </p>
             </div>
@@ -286,11 +283,11 @@ export default function Home() {
               <SectionReveal key={e.name} delay={i * 80}>
                 <div className="border border-white/10 hover:border-umati-500 transition-colors duration-500 p-7 lg:p-9 h-full bg-white/[0.02] backdrop-blur-sm">
                   <p className="font-mono text-xs text-umati-400 mb-4">0{i + 1} / 04</p>
-                  <h3 className="font-display font-black text-[22px] leading-[1.1] tracking-[-0.03em] text-white mb-1.5">
+                  <h3 className="type-sub text-white mb-1.5">
                     {e.name}
                   </h3>
                   <p className="eyebrow text-umati-400 mb-5">{e.role}</p>
-                  <p className="text-[14px] text-ivory-200/75 leading-relaxed">{e.blurb}</p>
+                  <p className="type-small text-ivory-200/75">{e.blurb}</p>
                 </div>
               </SectionReveal>
             ))}
@@ -307,13 +304,13 @@ export default function Home() {
             <div className="grid lg:grid-cols-12 gap-8 mb-14 lg:mb-20">
               <div className="lg:col-span-6">
                 <p className="eyebrow text-umati-600 mb-4">Why Umati</p>
-                <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+                <h2 className="type-h2 text-onyx-900">
                   Results that
                   <span className="block text-umati-500">stand, last, endure.</span>
                 </h2>
               </div>
               <div className="lg:col-span-5 lg:col-start-8 lg:pt-6">
-                <p className="text-onyx-600 text-[17px] leading-[1.7]">
+                <p className="type-lead text-onyx-600">
                   We deliver projects that stand, returns that last, and trust that endures. Six commitments that frame every single Umati project — held to the same uncompromising standard.
                 </p>
               </div>
@@ -324,10 +321,10 @@ export default function Home() {
             {pillars.map((p, i) => (
               <SectionReveal key={p.title} delay={i * 60}>
                 <div className="bg-ivory-50 p-7 lg:p-9 h-full border-l-2 border-umati-500">
-                  <h3 className="font-display font-black text-[22px] tracking-[-0.03em] text-onyx-900 mb-4">
+                  <h3 className="type-sub text-onyx-900 mb-4">
                     {p.title}
                   </h3>
-                  <div className="space-y-4 text-[14px] leading-relaxed">
+                  <div className="space-y-4 type-small">
                     <div>
                       <p className="eyebrow text-umati-600 mb-1.5">Our standard</p>
                       <p className="text-onyx-700">{p.standard}</p>
@@ -360,12 +357,12 @@ export default function Home() {
         <div className="relative max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14">
           <div className="max-w-4xl">
             <p className="eyebrow text-umati-400 mb-6">Investment opportunity</p>
-            <h2 className="display-mega text-white text-[44px] sm:text-[64px] lg:text-[88px] leading-[0.92]">
+            <h2 className="type-h1 text-white">
               Zimbabwe real estate.
               <span className="block text-umati-500">USD-denominated.</span>
               <span className="block">Actively managed.</span>
             </h2>
-            <p className="mt-8 text-ivory-100/85 text-[18px] leading-[1.7] max-w-2xl">
+            <p className="type-lead mt-8 text-ivory-100/85 max-w-2xl">
               Harare's northern suburbs present a compelling investment case — grounded in structural undersupply, hard-currency pricing, and demonstrated capital appreciation. Umati is the platform to access it, with professional oversight at every stage.
             </p>
             <div className="mt-10 grid sm:grid-cols-3 gap-3 max-w-2xl">
@@ -401,7 +398,7 @@ export default function Home() {
           <SectionReveal>
             <div className="mb-14 lg:mb-20">
               <p className="eyebrow text-umati-600 mb-4">In their words</p>
-              <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[68px] leading-[0.95] max-w-3xl">
+              <h2 className="type-h2 text-onyx-900 max-w-3xl">
                 Owners. Investors. Partners.
               </h2>
             </div>
@@ -412,12 +409,12 @@ export default function Home() {
               <SectionReveal key={i} delay={i * 100}>
                 <figure className="h-full flex flex-col">
                   <Quotes size={34} weight="fill" className="text-umati-500 mb-6" />
-                  <blockquote className="flex-1 text-[16px] lg:text-[17px] text-onyx-800 leading-[1.65]">
+                  <blockquote className="type-lead flex-1 text-onyx-800">
                     "{t.quote}"
                   </blockquote>
                   <figcaption className="mt-8 pt-6 border-t border-onyx-200">
                     <p className="font-display font-bold text-onyx-900">{t.name}</p>
-                    <p className="text-[13px] text-onyx-500 mt-0.5">{t.role}</p>
+                    <p className="type-small text-onyx-500 mt-0.5">{t.role}</p>
                   </figcaption>
                 </figure>
               </SectionReveal>
@@ -434,10 +431,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
               <p className="eyebrow text-umati-600 mb-5">Get in touch</p>
-              <h2 className="display-mega text-onyx-900 text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+              <h2 className="type-h2 text-onyx-900">
                 Start a conversation.
               </h2>
-              <p className="mt-6 text-onyx-600 text-[17px] leading-[1.7] max-w-lg">
+              <p className="type-lead mt-6 text-onyx-600 max-w-lg">
                 WhatsApp is our preferred channel for the fastest response — brochures, floor plans, and current pricing delivered within 24 hours.
               </p>
             </div>
@@ -446,7 +443,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="eyebrow text-umati-400 group-hover:text-white mb-2">Preferred channel</p>
-                    <p className="font-display font-black text-2xl text-white">WhatsApp</p>
+                    <p className="type-sub text-white">WhatsApp</p>
                     <p className="text-sm text-ivory-300/80 group-hover:text-white mt-1">{business.phone}</p>
                   </div>
                   <WhatsappLogo size={40} weight="duotone" className="text-umati-400 group-hover:text-white shrink-0" />
@@ -456,7 +453,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="eyebrow text-onyx-500 group-hover:text-umati-400 mb-2">Call</p>
-                    <p className="font-display font-black text-2xl text-onyx-900 group-hover:text-white">{business.phone}</p>
+                    <p className="type-sub text-onyx-900 group-hover:text-white">{business.phone}</p>
                     <p className="text-sm text-onyx-500 group-hover:text-ivory-300 mt-1">{business.phoneAlt}</p>
                   </div>
                   <Phone size={40} weight="duotone" className="text-onyx-400 group-hover:text-umati-400 shrink-0" />
@@ -466,7 +463,7 @@ export default function Home() {
                 <div className="flex items-center justify-between gap-6">
                   <div>
                     <p className="eyebrow text-onyx-500 group-hover:text-umati-400 mb-2">Visit or write</p>
-                    <p className="font-display font-black text-2xl">Contact page</p>
+                    <p className="type-sub">Contact page</p>
                   </div>
                   <ArrowUpRight size={28} weight="bold" className="shrink-0" />
                 </div>

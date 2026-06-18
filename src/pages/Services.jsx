@@ -29,11 +29,11 @@ export default function Services() {
             <span className="text-umati-400">What we do</span>
           </nav>
           <p className="eyebrow text-umati-400 mb-5">What we do</p>
-          <h1 className="display-mega text-[52px] sm:text-[80px] lg:text-[112px] leading-[0.9]">
+          <h1 className="type-hero">
             Turnkey, means
             <span className="block text-umati-500">turnkey.</span>
           </h1>
-          <p className="mt-8 text-[17px] lg:text-[19px] text-ivory-200/80 max-w-3xl leading-[1.65]">
+          <p className="type-lead mt-8 text-ivory-200/80 max-w-3xl">
             We are selective in the projects we take on, choosing only those with the right fundamentals, the right location, and the right potential for lasting financial and community impact. Every stage — concept to completion — is delivered in-house.
           </p>
         </div>
@@ -58,10 +58,10 @@ export default function Services() {
           <SectionReveal>
             <div className="max-w-3xl mb-14">
               <p className="eyebrow text-umati-400 mb-4">Integrated ecosystem</p>
-              <h2 className="display-mega text-[40px] sm:text-[56px] lg:text-[72px] leading-[0.95]">
+              <h2 className="type-h2">
                 Four entities, one standard.
               </h2>
-              <p className="mt-6 text-ivory-200/80 text-[17px] leading-[1.7]">
+              <p className="type-lead mt-6 text-ivory-200/80">
                 Every Umati project is delivered in concert by four strategically aligned entities — eliminating the gaps, delays, and conflicts that arise when functions are managed by separate, unaligned parties.
               </p>
             </div>
@@ -71,9 +71,9 @@ export default function Services() {
               <SectionReveal key={e.name} delay={i * 80}>
                 <div className="bg-white/[0.03] border border-white/10 p-7 h-full">
                   <p className="font-mono text-xs text-umati-400 mb-4">0{i + 1} / 04</p>
-                  <h3 className="font-display font-black text-[22px] leading-[1.1] tracking-[-0.03em] text-white mb-1.5">{e.name}</h3>
+                  <h3 className="type-sub text-white mb-1.5">{e.name}</h3>
                   <p className="eyebrow text-umati-400 mb-5">{e.role}</p>
-                  <p className="text-[14px] text-ivory-200/75 leading-relaxed">{e.blurb}</p>
+                  <p className="type-small text-ivory-200/75">{e.blurb}</p>
                 </div>
               </SectionReveal>
             ))}
@@ -86,7 +86,7 @@ export default function Services() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
           <div className="max-w-2xl">
             <p className="eyebrow text-umati-600 mb-4">Thinking of a partnership?</p>
-            <h2 className="display-mega text-onyx-900 text-[36px] sm:text-[52px] lg:text-[64px] leading-[0.95]">
+            <h2 className="type-h2 text-onyx-900">
               Bring us the land.
               <span className="block text-umati-500">We will structure the rest.</span>
             </h2>

@@ -43,11 +43,11 @@ export default function Developments() {
             <span className="text-umati-400">Developments</span>
           </nav>
           <p className="eyebrow text-umati-400 mb-5">Our portfolio</p>
-          <h1 className="display-mega text-[52px] sm:text-[80px] lg:text-[112px] leading-[0.9]">
+          <h1 className="type-hero">
             Three complete.
             <span className="block text-umati-500">Three in motion.</span>
           </h1>
-          <p className="mt-8 text-[17px] lg:text-[19px] text-ivory-200/80 max-w-2xl leading-[1.65]">
+          <p className="type-lead mt-8 text-ivory-200/80 max-w-2xl">
             Forty-plus units already delivered. A pipeline that extends from Harare's prime northern suburbs to Zimbabwe's fastest-growing secondary cities — each one held to the same uncompromising Umati standard.
           </p>
         </div>
@@ -101,10 +101,10 @@ export default function Developments() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-8 lg:px-14 grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7">
             <p className="eyebrow text-umati-600 mb-4">Priority access</p>
-            <h2 className="display-mega text-onyx-900 text-[36px] sm:text-[52px] lg:text-[64px] leading-[0.95]">
+            <h2 className="type-h2 text-onyx-900">
               Register for the next launch.
             </h2>
-            <p className="mt-5 text-onyx-600 text-[17px] leading-[1.65] max-w-xl">
+            <p className="type-lead mt-5 text-onyx-600 max-w-xl">
               Registered investors receive priority notification of new launches, off-plan pricing access, and invitations to Umati investor briefings before opportunities go public.
             </p>
           </div>

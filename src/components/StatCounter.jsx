@@ -40,7 +40,7 @@ export default function StatCounter({ value, suffix = '', label, duration = 1600
 
   return (
     <div ref={ref} className="text-left">
-      <p className="display-mega text-5xl sm:text-6xl lg:text-7xl text-onyx-900 leading-none">
+      <p className="type-h1 text-onyx-900">
         <span>{count}</span>
         <span className="text-umati-500">{suffix}</span>
       </p>

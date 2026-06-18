@@ -14,10 +14,10 @@ export default function LeadershipCard({ person }) {
       </div>
       <div className="pt-5">
         <p className="eyebrow text-umati-600">{person.role}</p>
-        <h3 className="mt-2 font-display font-black text-[22px] leading-tight tracking-[-0.03em] text-onyx-900">
+        <h3 className="type-sub mt-2 text-onyx-900">
           {person.name}
         </h3>
-        <p className="mt-3 text-[14px] text-onyx-600 leading-relaxed">{person.bio}</p>
+        <p className="type-small mt-3 text-onyx-600">{person.bio}</p>
       </div>
     </article>
   );

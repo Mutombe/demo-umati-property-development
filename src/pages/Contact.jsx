@@ -63,10 +63,10 @@ export default function Contact() {
             <Link to="/" className="hover:text-umati-400">Home</Link><span className="mx-2">/</span><span className="text-umati-400">Contact</span>
           </nav>
           <p className="eyebrow text-umati-400 mb-5">Contact & inquiries</p>
-          <h1 className="display-mega text-[52px] sm:text-[80px] lg:text-[112px] leading-[0.9]">
+          <h1 className="type-hero">
             Let us talk.
           </h1>
-          <p className="mt-7 text-[17px] lg:text-[19px] text-ivory-200/85 max-w-3xl leading-[1.65]">
+          <p className="type-lead mt-7 text-ivory-200/85 max-w-3xl">
             Whether you are looking for your next home, exploring an investment from abroad, or seeking a development partner — we welcome your inquiry. WhatsApp is our preferred channel for the fastest response.
           </p>
         </div>
@@ -78,10 +78,10 @@ export default function Contact() {
           <div className="lg:col-span-7">
             <SectionReveal>
               <p className="eyebrow text-umati-600 mb-4">Register your interest</p>
-              <h2 className="display-mega text-onyx-900 text-[32px] sm:text-[44px] lg:text-[52px] leading-[0.98]">
+              <h2 className="type-h2 text-onyx-900">
                 Start with the essentials.
               </h2>
-              <p className="mt-4 text-onyx-600 text-[15px] leading-relaxed max-w-xl">
+              <p className="type-body mt-4 text-onyx-600 max-w-xl">
                 We will send the project brochure, floor plans, and current pricing schedule within 24 hours.
               </p>
             </SectionReveal>
